@@ -126,7 +126,7 @@ body {
     background-color: #147558;
 }
 
-/* لیست پهنه‌ها */
+/* لیست پهنه‌ها و منوها */
 .zone-list {
     display: flex;
     flex-direction: column;
