@@ -9,7 +9,7 @@ window.DASHBOARD_DATA = {
       "page_id": "design",
       "title": "طراحی",
       "subtitle": "مدیریت اسناد و نقشه‌های طراحی",
-      "icon": "briefcase-business",
+      "icon": "design",
       "order": 1,
       "sections": [
         
