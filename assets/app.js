@@ -6,7 +6,7 @@
     "layout-dashboard":"📊","settings":"⚙️","wallet":"💳","coins":"🪙","briefcase-business":"💼",
     "pie-chart":"◔","map":"🗺️","users":"👥","house":"🏠","building":"🏗️","droplets":"💧","zap":"⚡",
     "flame":"🔥","route":"🛣️","trees":"🌳","receipt":"🧾","landmark":"🏛️","circle-percent":"٪",
-    "badge-check":"✅","triangle-alert":"⚠️","chart-no-axes-combined":"📈","building-2":"🏢", "construction-site":"🏗️", "design":"✏️"
+    "badge-check":"✅","triangle-alert":"⚠️","chart-no-axes-combined":"📈","building-2":"🏢"
   };
   let currentPage = null;
 
@@ -174,24 +174,39 @@
     return items.map(t=>`<div class="text-box"><strong>${esc(t.title)}</strong>${esc(t.body)}</div>`).join("");
   }
 
+  // این تابع تغییر کرده است
   function renderAttachments(items = []) {
-  if (!items || items.length === 0) return "";
-  
-  return `
-    <div class="attach-box">
-      ${items.map(a => `
-        <div class="attach-item" style="padding: 10px 0; border-bottom: 1px solid #f1f5f9; display: flex; justify-content: space-between; align-items: center;">
-          <div>
-            <strong style="color: #1e293b; display: block;">${esc(a.title)}</strong>
-            ${a.description ? `<div style="font-size: 12px; color: #64748b; margin-top: 2px;">${esc(a.description)}</div>` : ""}
+    if (!items || items.length === 0) return "";
+    
+    return `
+      <div class="attach-box">
+        ${items.map(a => `
+          <div class="attach-item" style="padding: 12px 0; border-bottom: 1px solid #f1f5f9; display: flex; flex-direction: column;">
+            
+            <!-- بخش هدر که با کلیک روی آن محتوا باز و بسته می‌شود -->
+            <div style="display: flex; justify-content: space-between; align-items: center; width: 100%; cursor: pointer;" 
+                 onclick="const content = this.nextElementSibling; content.style.display = content.style.display === 'block' ? 'none' : 'block';">
+              <div>
+                <strong style="color: #1e293b; display: block; font-size: 15px;">${esc(a.title)}</strong>
+                ${a.description ? `<div style="font-size: 12px; color: #64748b; margin-top: 4px;">${esc(a.description)}</div>` : ""}
+              </div>
+              
+              <div style="display: flex; align-items: center; gap: 12px;">
+                <span style="font-size: 12px; color: var(--primary); background: #f0f4ff; padding: 4px 8px; border-radius: 6px;">▼ مشاهده نقشه</span>
+                ${a.file_name ? `<a href="${esc(a.file_name)}" class="soft-btn" style="text-decoration:none; white-space: nowrap;" download onclick="event.stopPropagation();">📎 دریافت فایل</a>` : ""}
+              </div>
+            </div>
+            
+            <!-- بخش محتوای مخفی (عکس نقشه و توضیحات) -->
+            <div style="display: none; width: 100%; margin-top: 15px; padding-top: 15px; border-top: 1px dashed #dbe5ef;">
+              ${a.map_image ? `<img src="${esc(a.map_image)}" alt="نقشه ${esc(a.title)}" style="max-width: 100%; border-radius: 12px; margin-bottom: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08);">` : ""}
+              ${a.map_description ? `<p style="font-size: 14px; color: #42566c; line-height: 1.9; margin: 0;">${esc(a.map_description)}</p>` : ""}
+            </div>
+            
           </div>
-          <a href="${esc(a.file_name)}" class="soft-btn" style="text-decoration:none; white-space: nowrap; margin-left: 10px;" download>
-            📎 دریافت فایل
-          </a>
-        </div>
-      `).join("")}
-    </div>`;
-}
+        `).join("")}
+      </div>`;
+  }
   
   function renderMap(layers=[]) {
     if(!layers.length) return "";
