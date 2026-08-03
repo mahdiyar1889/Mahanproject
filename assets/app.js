@@ -6,7 +6,7 @@
     "layout-dashboard":"📊","settings":"⚙️","wallet":"💳","coins":"🪙","briefcase-business":"💼",
     "pie-chart":"◔","map":"🗺️","users":"👥","house":"🏠","building":"🏗️","droplets":"💧","zap":"⚡",
     "flame":"🔥","route":"🛣️","trees":"🌳","receipt":"🧾","landmark":"🏛️","circle-percent":"٪",
-    "badge-check":"✅","triangle-alert":"⚠️","chart-no-axes-combined":"📈","building-2":"🏢", "construction-site":"🏗️"
+    "badge-check":"✅","triangle-alert":"⚠️","chart-no-axes-combined":"📈","building-2":"🏢", "construction-site":"🏗️", "design":"✏️"
   };
   let currentPage = null;
 
