@@ -56,7 +56,7 @@ window.DASHBOARD_DATA = {
       "page_id": "supervision",
       "title": "نظارت",
       "subtitle": "مدیریت گزارش‌های کارگاهی و نظارت عالیه",
-      "icon": "badge-check",
+      "icon": "construction-site",
       "order": 2,
       "sections": [
         {
