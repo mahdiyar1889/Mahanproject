@@ -12,7 +12,6 @@ window.DASHBOARD_DATA = {
       "icon": "briefcase-business",
       "order": 1,
       "sections": [
-        
         {
           "section_id": "s1",
           "title": "1- شرح خدمات مطالعات",
@@ -20,7 +19,6 @@ window.DASHBOARD_DATA = {
             { "title": "شرح خدمات قرارداد طراحی", "file_name": "assets/mahan_contract_design.pdf" }
           ]
         },
-        
         {
           "section_id": "s2",
           "title": "2- مطالعات مرحله اول",
@@ -48,7 +46,6 @@ window.DASHBOARD_DATA = {
             }
           ]
         },
-        
         {
           "section_id": "s3",
           "title": "3- مطالعات مرحله دوم",
@@ -62,7 +59,6 @@ window.DASHBOARD_DATA = {
             { "title": "تاسیسات", "description": "نقشه‌های نهایی تاسیسات مکانیکی و برقی، دفترچه محاسبات", "file_name": "assets/M&E.rar" }
           ]
         },
-
         {
           "section_id": "s4",
           "title": "4- برآورد و اسناد مناقصه",
