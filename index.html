@@ -30,44 +30,21 @@
             <!-- منوی سمت راست -->
             <aside class="sidebar">
                 <div class="sidebar-header">
-                    <h2>لیست پروژه‌ها</h2>
-                    <p>برای مشاهده نقشه و جزئیات، روی هر پروژه کلیک کنید</p>
-                    <button class="btn-main" onclick="changeMap('image_715aa8.jpg')">نمایش نقشه کلی شهرک</button>
+                    <h2>لیست نقشه‌ها</h2>
+                    <p>برای مشاهده نقشه و جزئیات، روی هر مورد کلیک کنید</p>
+                    <button class="btn-main" onclick="changeMap('image_715aa8.jpg')">نمایش تصویر اصلی پروژه</button>
                 </div>
 
-                <!-- لیست پهنه‌ها -->
-                <div class="zone-list">
-                    <button class="zone-item" onclick="changeMap('assets/map-g1.jpg')">
-                        <span>پهنه G1 - عرصه ساحلی</span>
-                        <span class="arrow">⌄</span>
-                    </button>
-                    <button class="zone-item" onclick="changeMap('assets/map-g2.jpg')">
-                        <span>پهنه G2 - پارک جنگلی</span>
-                        <span class="arrow">⌄</span>
-                    </button>
-                    <button class="zone-item" onclick="changeMap('assets/map-g3.jpg')">
-                        <span>پهنه G3 - عرصه میانی</span>
-                        <span class="arrow">⌄</span>
-                    </button>
-                    <button class="zone-item" onclick="changeMap('assets/map-g4.jpg')">
-                        <span>پهنه G4 - حریم هیدرولوژیک</span>
-                        <span class="arrow">⌄</span>
-                    </button>
-                    <button class="zone-item" onclick="changeMap('assets/map-g5.jpg')">
-                        <span>پهنه G5 - کمربند سبز</span>
-                        <span class="arrow">⌄</span>
-                    </button>
-                    <button class="zone-item" onclick="changeMap('assets/map-s1.jpg')">
-                        <span>پهنه S1 - عرصه ورودی</span>
-                        <span class="arrow">⌄</span>
-                    </button>
+                <!-- این بخش (menu-container) توسط جاوااسکریپت و از روی دیتای شما به صورت خودکار پر می‌شود -->
+                <div class="zone-list" id="menu-container">
+                    <!-- دکمه‌ها اینجا لود می‌شوند -->
                 </div>
             </aside>
 
             <!-- نمایشگر نقشه سمت چپ -->
             <main class="map-viewer">
                 <div class="map-frame">
-                    <!-- تصویر پیش‌فرض (تصویر اصلی نقشه) -->
+                    <!-- تصویر پیش‌فرض -->
                     <img id="active-map" src="image_715aa8.jpg" alt="نقشه منطقه">
                 </div>
             </main>
@@ -75,7 +52,7 @@
         </div>
     </div>
 
-    <!-- اتصال به فایل‌های جاوااسکریپت -->
+    <!-- اتصال به فایل دیتای شما و سپس منطق برنامه -->
     <script src="assets/dashboard-data.js"></script>
     <script src="assets/app.js"></script>
 </body>
