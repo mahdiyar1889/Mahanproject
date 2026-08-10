@@ -43,7 +43,7 @@ window.DASHBOARD_DATA = {
             { 
               "title": "سازه", 
               "description": "نقشه‌های نهایی سازه، دفترچه محاسبات و آزمایش ژئوتکنیک", 
-              "file_name": "https://app.fazabox.com/u/86a5d3d53b" 
+              "file_name": "https://app.fazabox.com/u/72cfe741fa" 
             },
             { 
               "title": "تاسیسات", 
