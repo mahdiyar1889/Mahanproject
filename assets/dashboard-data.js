@@ -40,8 +40,16 @@ window.DASHBOARD_DATA = {
               "description": "نقشه‌های نهایی معماری و رندرهای نهایی سه بعدی", 
               "file_name": "https://app.fazabox.com/u/e9f5cdb7fe" 
             },
-            { "title": "سازه", "description": "نقشه‌های نهایی سازه، دفترچه محاسبات و آزمایش ژئوتکنیک", "file_name": "assets/Structure.rar" },
-            { "title": "تاسیسات", "description": "نقشه‌های نهایی تاسیسات مکانیکی و برقی، دفترچه محاسبات", "file_name": "assets/M&E.rar" }
+            { 
+              "title": "سازه", 
+              "description": "نقشه‌های نهایی سازه، دفترچه محاسبات و آزمایش ژئوتکنیک", 
+              "file_name": "https://app.fazabox.com/u/86a5d3d53b" 
+            },
+            { 
+              "title": "تاسیسات", 
+              "description": "نقشه‌های نهایی تاسیسات مکانیکی و برقی، دفترچه محاسبات", 
+              "file_name": "https://app.fazabox.com/u/e90c29b6f3" 
+            }
           ]
         },
 
