@@ -12,12 +12,11 @@ window.DASHBOARD_DATA = {
       "icon": "design",
       "order": 1,
       "sections": [
-        
         {
           "section_id": "s1",
           "title": "1- شرح خدمات مطالعات",
           "attachments": [
-            { "title": "شرح خدمات قرارداد طراحی", "file_name": "assets/mahan_contract_design.pdf" }
+            { "title": "شرح خدمات قرارداد طراحی", "file_name": "https://app.fazabox.com/u/3f192cc35b" }
           ]
         },
         
